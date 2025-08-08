@@ -13,7 +13,7 @@ struct ContentView: View {
                     }
                 }
             
-            Text("Maps screen")
+            MapView()
                 .tabItem {
                     VStack {
                         Image(systemName: "map")
