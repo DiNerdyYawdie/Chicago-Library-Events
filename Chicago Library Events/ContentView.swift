@@ -5,7 +5,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Events screen")
+            EventsView()
                 .tabItem {
                     VStack {
                         Image(systemName: "pin")
