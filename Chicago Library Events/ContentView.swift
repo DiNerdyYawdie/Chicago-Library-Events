@@ -4,13 +4,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Text("Events screen")
+                .tabItem {
+                    VStack {
+                        Image(systemName: "pin")
+                        Text("Events")
+                    }
+                }
+            
+            Text("Maps screen")
+                .tabItem {
+                    VStack {
+                        Image(systemName: "map")
+                        Text("Map Screen")
+                    }
+                }
+            
+            Text("Settings Screen")
+                .tabItem {
+                    VStack {
+                        Image(systemName:"gear")
+                        Text("Settings")
+                    }
+                }
+
         }
-        .padding()
     }
 }
 
