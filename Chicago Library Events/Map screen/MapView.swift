@@ -1,5 +1,5 @@
 //
-//  EventsView.swift
+//  MapView.swift
 //  Chicago Library Events
 //
 //  Created by Shanique Beckford on 8/7/25.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct EventsView: View {
+struct MapView: View {
     var body: some View {
         NavigationStack {
             
-            Text("Event Screen")
-                .navigationTitle(Text("Events"))
             
+            Text("Map screen")
+                .navigationTitle(Text("Map"))
         }
     }
 }
 
 #Preview {
-    EventsView()
+    MapView()
 }
