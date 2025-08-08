@@ -21,7 +21,7 @@ struct ContentView: View {
                     }
                 }
             
-            Text("Settings Screen")
+            SettingsView()
                 .tabItem {
                     VStack {
                         Image(systemName:"gear")
