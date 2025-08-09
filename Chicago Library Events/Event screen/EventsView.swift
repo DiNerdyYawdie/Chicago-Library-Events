@@ -10,23 +10,34 @@ import SwiftUI
 struct EventsView: View {
     var body: some View {
         NavigationStack {
-            Text("")
-                .navigationTitle(Text("Events"))
             
-            List{
-                Text("Adult Book Club: Wellness(2023)").font(Font.title.weight(.semibold))
+            List {
+                Text("Adult Book Club: Wellness(2023)")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
                 Text("Weird Book Club at Midwest Coast Brewing: Mister Magic")
-                    .font(Font.title.weight(.semibold))
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
                 Text("Play Day")
-                    .font(Font.title.weight(.semibold))
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
                 Text("Adult Book Discussion: Number Go Up: Insude Crypto's Wild Rise and Staggering Fall")
-                    .font(Font.title.weight(.semibold))
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
                 Text("Adult Book Discussion: Children of Chicago")
-                    .font(Font.title.weight(.semibold))
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
                 Text("Virtual Writing Club / Club de Escritura Virtual")
-                    .font(Font.title.weight(.semibold))
+                    .font(.headline)
+                    .fontWeight(.semibold)
                 
             }
+            .navigationTitle(Text("Events"))
         }
     }
 }
