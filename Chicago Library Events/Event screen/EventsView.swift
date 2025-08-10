@@ -12,7 +12,7 @@ struct EventsView: View {
         NavigationStack {
             
             List {
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Adult Book Club: Wellness(2023)")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -21,7 +21,7 @@ struct EventsView: View {
                         .lineLimit(2)
                         .foregroundStyle(.secondary)
                 }
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Weird Book Club at Midwest Coast Brewing: Mister Magic")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -30,7 +30,7 @@ struct EventsView: View {
                         .lineLimit(2)
                         .foregroundStyle(.secondary)
                 }
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Play Day")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -40,7 +40,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Adult Book Discussion: Number Go Up: Insude Crypto's Wild Rise and Staggering Fall")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -50,7 +50,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Adult Book Discussion: Children of Chicago")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -60,7 +60,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                 }
                 
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Virtual Writing Club / Club de Escritura Virtual")
                         .font(.headline)
                         .fontWeight(.semibold)
