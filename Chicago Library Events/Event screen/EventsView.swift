@@ -12,7 +12,7 @@ struct EventsView: View {
         NavigationStack {
             
             List {
-                VStack{
+                VStack {
                     Text("Adult Book Club: Wellness(2023)")
                         .font(.headline)
                         .fontWeight(.semibold)
