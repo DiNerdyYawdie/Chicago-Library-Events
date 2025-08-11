@@ -22,7 +22,7 @@ struct EventsView: View {
                         .lineLimit(2)
                         .foregroundStyle(.secondary)
                     Text("3710 E. 106th Street")
-                        .font(.caption)
+                        .font(.subheadline)
                 }
                 VStack(alignment: .leading) {
                     Text("Weird Book Club at Midwest Coast Brewing: Mister Magic")
@@ -35,7 +35,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom)
                     Text("2137 West Walnut Street")
-                        .font(.caption)
+                        .font(.subheadline)
                 }
                 VStack(alignment: .leading) {
                     Text("Play Day")
@@ -48,7 +48,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom)
                     Text("4024 N. Elston Avenue")
-                        .font(.caption)
+                        .font(.subheadline)
                 }
                 
                 VStack(alignment: .leading) {
@@ -62,7 +62,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom)
                     Text("6348 S. Archer Avenue")
-                        .font(.caption)
+                        .font(.subheadline)
                 }
                 
                 VStack(alignment: .leading) {
@@ -76,7 +76,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom)
                     Text("644 W. Belmont Avenue")
-                        .font(.caption)
+                        .font(.subheadline)
                 }
                 
                 VStack(alignment: .leading) {
@@ -90,7 +90,7 @@ struct EventsView: View {
                         .foregroundStyle(.secondary)
                         .padding(.bottom)
                     Text("7506 S. Racine Avenue")
-                        .font(.caption)
+                        .font(.subheadline)
                 }
                 
                 
