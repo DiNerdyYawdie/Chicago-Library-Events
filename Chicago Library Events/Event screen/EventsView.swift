@@ -97,6 +97,7 @@ struct EventsView: View {
             }
             .navigationTitle(Text("Events"))
         }
+        .listStyle(.plain)
     }
 }
 
