@@ -12,6 +12,7 @@ struct EventsView: View {
         NavigationStack {
             
             List {
+                
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Adult Book Club: Wellness(2023)")
