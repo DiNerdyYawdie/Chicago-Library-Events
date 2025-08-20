@@ -11,7 +11,6 @@ struct MapView: View {
     var body: some View {
         NavigationStack {
             
-            
             Text("Map screen")
                 .navigationTitle(Text("Map"))
         }
