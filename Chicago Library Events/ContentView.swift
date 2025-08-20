@@ -13,13 +13,13 @@ struct ContentView: View {
                     }
                 }
             
-            MapView()
-                .tabItem {
-                    VStack {
-                        Image(systemName: "map")
-                        Text("Map Screen")
-                    }
-                }
+          //  MapView()
+            //    .tabItem {
+              //      VStack {
+                   //     Image(systemName: "map")
+                   //     Text("Map Screen")
+              //      }
+             //   }
             
             SettingsView()
                 .tabItem {
