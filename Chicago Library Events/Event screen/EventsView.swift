@@ -9,8 +9,11 @@ import SwiftUI
 
 struct EventsView: View {
     var body: some View {
+        
+        // `NavigationStack` is used to show the title, `.navigationTitle` is used to display the name
+        //
         NavigationStack {
-            
+            // `List` is used to show information within a row
             List {
                 
                 EventsRowView(title: "Adult Book Club: Wellness(2023)", day: "Tuesday", description: "<p>Do you like science fiction, fantasy, horror, or just plain strange books? Meet fellow weird readers to discuss strange and speculative fiction at Weird Book Club, an adult book discussion group that meets at <a href=\"https://www.maproom.com/\">Map Room</a>, on the last Monday of every month. This month, we are reading <a id=\"ember17287\" data-add-title-link=\"2534706126\" href=\"/item/show/2534706126\">Out There Screaming</a>: An Anthology of New Black Horror&nbsp;edited by Jordan Peele.<br></p><p>Sci-fi, fantasy and horror blend in one terrifying anthology from Black speculative fiction authors, including Tananarive Due, N.K. Jemisin, and P.&nbsp;Djéli Clark,&nbsp;edited by <em>Get Out</em>'s Jordan Peele.<br></p>\n<p>Books are available to checkout at the Bucktown-Wicker Park Branch circulation desk, while supplies last. Many titles are also available as eBooks or eAudiobooks on the Hoopla and/or Libby app.<br></p>\n<p><strong>How to Attend<br></strong>This event takes place in person, offsite.&nbsp;Please follow the masking requirements of the location this event is hosted at.<br><br><strong>This event is for ages 21+</strong></p>", location: "Map room")
@@ -27,6 +30,7 @@ struct EventsView: View {
 			  
                 
             }
+            // `.navigationTitle` the modifier that is used for displaying the title on the screen, needs to be located in the `NavigationStack`
             .navigationTitle(Text("Events"))
             .listStyle(.plain)
         }
