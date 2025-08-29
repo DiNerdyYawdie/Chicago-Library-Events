@@ -18,6 +18,7 @@ struct EventsView: View {
             // `List` is used to show information within a row
             List(libraryEvents) { libraryEvent in
                 EventsRowView(title: libraryEvent.title, day: libraryEvent.day, description: libraryEvent.description, location: libraryEvent.location)
+                    .listRowSeparator(.hidden)
 
 
 
