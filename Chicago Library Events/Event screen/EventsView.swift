@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EventsView: View {
     
-    var viewModel: EventsScreenViewModel
+    @StateObject var viewModel: EventsScreenViewModel
     
     var body: some View {
         
@@ -19,7 +19,7 @@ struct EventsView: View {
                 
                 // `List` is used to show information within a row
             List(viewModel.libraryEvents) { libraryEvent in
-                    EventsRowView(title: libraryEvent.title, day: libraryEvent.day, description: libraryEvent.description, location: libraryEvent.location)
+				EventsRowView(title: libraryEvent.title, day: libraryEvent.day_of_the_week, description: libraryEvent.description, location: libraryEvent.location_name ?? "")
                         .listRowSeparator(.hidden)
                     
                     
@@ -28,6 +28,11 @@ struct EventsView: View {
                 // `.navigationTitle` the modifier that is used for displaying the title on the screen, needs to be located in the `NavigationStack`
                 .navigationTitle(Text("Events"))
                 .listStyle(.plain)
+				.onAppear {
+					Task {
+						await viewModel.getChicagoLibraryEvents()
+					}
+				}
             }
     }
 }
