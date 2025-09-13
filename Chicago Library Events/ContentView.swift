@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         // `TabView` allows users to create tabs for each screen
         TabView {
-            EventsView()
+            EventsView(viewModel: EventsScreenViewModel())
             // `.tabTiem` modifier that is used to create individual tabs
                 .tabItem {
                     VStack {
