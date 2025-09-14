@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct LibraryEvent: Identifiable {
+struct LibraryEvent: Identifiable, Decodable {
     var title: String
-    var location: String
-    var day: String
+    var location_name: String?
+    var day_of_the_week: String
     var description: String
-    var id = UUID()
-    
-    
+	var id: UUID {
+		return UUID()
+	}
 }
