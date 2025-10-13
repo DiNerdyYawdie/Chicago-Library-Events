@@ -22,9 +22,15 @@ struct EventsView: View {
 				EventsRowView(title: libraryEvent.title, day: libraryEvent.day_of_the_week, description: libraryEvent.description, location: libraryEvent.location_name ?? "")
                         .listRowSeparator(.hidden)
                     
-                    
-                    
                 }
+            .overlay {
+                // This allows the progressView to show the overlay icon
+                if viewModel.isLoading == true {
+                   ProgressView()
+                }
+                    
+            }
+        
                 // `.navigationTitle` the modifier that is used for displaying the title on the screen, needs to be located in the `NavigationStack`
                 .navigationTitle(Text("Events"))
                 .listStyle(.plain)
