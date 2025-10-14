@@ -16,30 +16,36 @@ struct EventsView: View {
         // `NavigationStack` is used to show the title, `.navigationTitle` is used to display the name
         //
         NavigationStack {
-                
+            // this statement checks if 'libraryEvents' is empty and show a text on the screen, if there is data then the information within the list will be displayed
+            if viewModel.libraryEvents.isEmpty {
+                Text("There is no events")
+            } else {
                 // `List` is used to show information within a row
-            List(viewModel.libraryEvents) { libraryEvent in
-				EventsRowView(title: libraryEvent.title, day: libraryEvent.day_of_the_week, description: libraryEvent.description, location: libraryEvent.location_name ?? "")
+                List(viewModel.libraryEvents) { libraryEvent in
+                    EventsRowView(title: libraryEvent.title, day: libraryEvent.day_of_the_week, description: libraryEvent.description, location: libraryEvent.location_name ?? "")
                         .listRowSeparator(.hidden)
                     
                 }
-            .overlay {
-                // This allows the progressView to show the overlay icon
-                if viewModel.isLoading == true {
-                   ProgressView()
-                }
+                .overlay {
+                    // This allows the progressView to show the overlay icon
+                    if viewModel.isLoading == true {
+                        ProgressView()
+                    }
                     
-            }
-        
+                }
+                
                 // `.navigationTitle` the modifier that is used for displaying the title on the screen, needs to be located in the `NavigationStack`
                 .navigationTitle(Text("Events"))
                 .listStyle(.plain)
-				.onAppear {
-					Task {
-						await viewModel.getChicagoLibraryEvents()
-					}
-				}
+                .onAppear {
+                    Task {
+                        await viewModel.getChicagoLibraryEvents()
+                    }
+                }
             }
+            
+        }
+        
     }
 }
 
