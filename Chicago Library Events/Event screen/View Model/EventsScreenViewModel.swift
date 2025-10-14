@@ -25,6 +25,7 @@ class EventsScreenViewModel: ObservableObject {
 			self.libraryEvents = try await apiServices.getChicagoLibraryEvents()
             // this hide the progress view
             isLoading = false
+            
 		} catch {
 			print("sdknsdkn")
 		}
